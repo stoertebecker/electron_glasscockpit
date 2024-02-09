@@ -1,0 +1,348 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
+        <link rel="stylesheet" type="text/css" href="f18.css">
+    </head>
+    <body>
+        <div class="ufc">
+            <div class="ufc-scratchpad ufc-display">
+                <span class="display-inner"></span>
+            </div>
+            <div class="ufc-numpad">
+                <div class="ufc-numpad-row">
+                    <button class="ufc-button" data-command-down="c 25 3019 1" data-command-up="c 25 3019 0"><span class="ufc-button-inner"><br>1</span></button>
+                    <button class="ufc-button" data-command-down="c 25 3020 1" data-command-up="c 25 3020 0"><span class="ufc-button-inner">N<br>2</span></button>
+                    <button class="ufc-button" data-command-down="c 25 3021 1" data-command-up="c 25 3021 0"><span class="ufc-button-inner"><br>3</span></button>
+                </div>
+                <div class="ufc-numpad-row">
+                    <button class="ufc-button" data-command-down="c 25 3022 1" data-command-up="c 25 3022 0"><span class="ufc-button-inner">W<br>4</span></button>
+                    <button class="ufc-button" data-command-down="c 25 3023 1" data-command-up="c 25 3023 0"><span class="ufc-button-inner"><br>5</span></button>
+                    <button class="ufc-button" data-command-down="c 25 3024 1" data-command-up="c 25 3024 0"><span class="ufc-button-inner">E<br>6</span></button>
+                </div>
+                <div class="ufc-numpad-row">
+                    <button class="ufc-button" data-command-down="c 25 3025 1" data-command-up="c 25 3025 0"><span class="ufc-button-inner"><br>7</span></button>
+                    <button class="ufc-button" data-command-down="c 25 3026 1" data-command-up="c 25 3026 0"><span class="ufc-button-inner">S<br>8</span></button>
+                    <button class="ufc-button" data-command-down="c 25 3027 1" data-command-up="c 25 3027 0"><span class="ufc-button-inner"><br>9</span></button>
+                </div>
+                <div class="ufc-numpad-row">
+                    <button class="ufc-button" data-command-down="c 25 3028 1" data-command-up="c 25 3028 0"><span class="ufc-button-inner"><br>CLR</span></button>
+                    <button class="ufc-button" data-command-down="c 25 3018 1" data-command-up="c 25 3018 0"><span class="ufc-button-inner">-<br>0</span></button>
+                    <button class="ufc-button" data-command-down="c 25 3029 1" data-command-up="c 25 3029 0"><span class="ufc-button-inner"><br>ENT</span></button>
+                </div>
+            </div>
+            <div class="ufc-options">
+                <div class="ufc-option-row ufc-option-row--1">
+                    <button class="ufc-button" data-command-down="c 25 3010 1" data-command-up="c 25 3010 0"><span class="ufc-button-inner"><span></span></span></button>
+                    <div class="ufc-display ufc-option-display ufc-option-display--1"><span class="display-inner"></span></div>
+                </div>
+                <div class="ufc-option-row ufc-option-row--2">
+                    <button class="ufc-button" data-command-down="c 25 3011 1" data-command-up="c 25 3011 0"><span class="ufc-button-inner"><span></span></span></button>
+                    <div class="ufc-display ufc-option-display ufc-option-display--2"><span class="display-inner"></span></div>
+                </div>
+                <div class="ufc-option-row ufc-option-row--3">
+                    <button class="ufc-button" data-command-down="c 25 3012 1" data-command-up="c 25 3012 0"><span class="ufc-button-inner"><span></span></span></button>
+                    <div class="ufc-display ufc-option-display ufc-option-display--3"><span class="display-inner"></span></div>
+                </div>
+                <div class="ufc-option-row ufc-option-row--4">
+                    <button class="ufc-button" data-command-down="c 25 3013 1" data-command-up="c 25 3013 0"><span class="ufc-button-inner"><span></span></span></button>
+                    <div class="ufc-display ufc-option-display ufc-option-display--4"><span class="display-inner"></span></div>
+                </div>
+                <div class="ufc-option-row ufc-option-row--5">
+                    <button class="ufc-button" data-command-down="c 25 3014 1" data-command-up="c 25 3014 0"><span class="ufc-button-inner"><span></span></span></button>
+                    <div class="ufc-display ufc-option-display ufc-option-display--5"><span class="display-inner"></span></div>
+                </div>
+            </div>
+            <div class="ufc-bottom">
+                <button class="ufc-button" data-command-down="c 25 3001 1" data-command-up="c 25 3001 0"><span class="ufc-button-inner">A/P</span></button>
+                <button class="ufc-button" data-command-down="c 25 3002 1" data-command-up="c 25 3002 0"><span class="ufc-button-inner">IFF</span></button>
+                <button class="ufc-button" data-command-down="c 25 3003 1" data-command-up="c 25 3003 0"><span class="ufc-button-inner">TCN</span></button>
+                <button class="ufc-button" data-command-down="c 25 3004 1" data-command-up="c 25 3004 0"><span class="ufc-button-inner">ILS</span></button>
+                <button class="ufc-button" data-command-down="c 25 3005 1" data-command-up="c 25 3005 0"><span class="ufc-button-inner">D/L</span></button>
+                <button class="ufc-button" data-command-down="c 25 3006 1" data-command-up="c 25 3006 0"><span class="ufc-button-inner">BCN</span></button>
+                <button class="ufc-button" data-command-down="c 25 3007 1" data-command-up="c 25 3007 0"><span class="ufc-button-inner">ON<br>OFF</span></button>
+            </div>
+        </div>
+        <div class="mfd mfd--left">
+            <dic class="mfd-inner">
+                <div class="mfd-button-row mfd-button-row--left mfd-button-row--vertical">
+                    <button class="mfd-button" data-command-down="c 35 3015 1" data-command-up="c 35 3015 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3014 1" data-command-up="c 35 3014 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3013 1" data-command-up="c 35 3013 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3012 1" data-command-up="c 35 3012 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3011 1" data-command-up="c 35 3011 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--top">
+                    <button class="mfd-button" data-command-down="c 35 3016 1" data-command-up="c 35 3016 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3017 1" data-command-up="c 35 3017 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3018 1" data-command-up="c 35 3018 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3019 1" data-command-up="c 35 3019 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3020 1" data-command-up="c 35 3020 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--right mfd-button-row--vertical">
+                    <button class="mfd-button" data-command-down="c 35 3021 1" data-command-up="c 35 3021 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3022 1" data-command-up="c 35 3022 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3023 1" data-command-up="c 35 3023 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3024 1" data-command-up="c 35 3024 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3025 1" data-command-up="c 35 3025 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--bottom">
+                    <button class="mfd-button" data-command-down="c 35 3030 1" data-command-up="c 35 3030 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3029 1" data-command-up="c 35 3029 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3028 1" data-command-up="c 35 3028 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3027 1" data-command-up="c 35 3027 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 35 3026 1" data-command-up="c 35 3026 0"><span class="mfd-button-inner"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="mfd mfd--right">
+            <dic class="mfd-inner">
+                <div class="mfd-button-row mfd-button-row--left mfd-button-row--vertical">
+                    <button class="mfd-button" data-command-down="c 36 3015 1" data-command-up="c 36 3015 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3014 1" data-command-up="c 36 3014 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3013 1" data-command-up="c 36 3013 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3012 1" data-command-up="c 36 3012 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3011 1" data-command-up="c 36 3011 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--top">
+                    <button class="mfd-button" data-command-down="c 36 3016 1" data-command-up="c 36 3016 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3017 1" data-command-up="c 36 3017 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3018 1" data-command-up="c 36 3018 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3019 1" data-command-up="c 36 3019 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3020 1" data-command-up="c 36 3020 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--right mfd-button-row--vertical">
+                    <button class="mfd-button" data-command-down="c 36 3021 1" data-command-up="c 36 3021 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3022 1" data-command-up="c 36 3022 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3023 1" data-command-up="c 36 3023 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3024 1" data-command-up="c 36 3024 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3025 1" data-command-up="c 36 3025 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--bottom">
+                    <button class="mfd-button" data-command-down="c 36 3030 1" data-command-up="c 36 3030 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3029 1" data-command-up="c 36 3029 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3028 1" data-command-up="c 36 3028 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3027 1" data-command-up="c 36 3027 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 36 3026 1" data-command-up="c 36 3026 0"><span class="mfd-button-inner"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="mfd mfd--center">
+            <dic class="mfd-inner">
+                <div class="switch switch--horizontal switch--crs">
+                    <fieldset class="top">
+                        <legend>CRS</legend>
+                        <div class="switch-inner">
+                            <div class="clickareas">
+                                <button class="left" data-command-down="c 35 3007 -1" data-command-up="c 35 3007 0" data-switch-direction-down="left" data-switch-direction-up="top"></button>
+                                <button class="right" data-command-down="c 35 3006 1" data-command-up="c 35 3006 0" data-switch-direction-down="right" data-switch-direction-up="top"></button>
+                            </div>
+                            <div class="rod"></div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="switch switch--horizontal switch--hdg">
+                    <fieldset class="top">
+                        <legend>HDG</legend>
+                        <div class="switch-inner">
+                            <div class="clickareas">
+                                <button class="left" data-command-down="c 35 3005 -1" data-command-up="c 35 3005 0" data-switch-direction-down="left" data-switch-direction-up="top"></button>
+                                <button class="right" data-command-down="c 35 3004 1" data-command-up="c 35 3004 0" data-switch-direction-down="right" data-switch-direction-up="top"></button>
+                            </div>
+                            <div class="rod"></div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="mfd-button-row mfd-button-row--left mfd-button-row--vertical">
+                    <button class="mfd-button" data-command-down="c 37 3015 1" data-command-up="c 37 3015 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3014 1" data-command-up="c 37 3014 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3013 1" data-command-up="c 37 3013 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3012 1" data-command-up="c 37 3012 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3011 1" data-command-up="c 37 3011 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--top">
+                    <button class="mfd-button" data-command-down="c 37 3016 1" data-command-up="c 37 3016 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3017 1" data-command-up="c 37 3017 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3018 1" data-command-up="c 37 3018 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3019 1" data-command-up="c 37 3019 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3020 1" data-command-up="c 37 3020 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--right mfd-button-row--vertical">
+                    <button class="mfd-button" data-command-down="c 37 3021 1" data-command-up="c 37 3021 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3022 1" data-command-up="c 37 3022 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3023 1" data-command-up="c 37 3023 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3024 1" data-command-up="c 37 3024 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3025 1" data-command-up="c 37 3025 0"><span class="mfd-button-inner"></span></button>
+                </div>
+                <div class="mfd-button-row mfd-button-row--bottom">
+                    <button class="mfd-button" data-command-down="c 37 3030 1" data-command-up="c 37 3030 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3029 1" data-command-up="c 37 3029 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3028 1" data-command-up="c 37 3028 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3027 1" data-command-up="c 37 3027 0"><span class="mfd-button-inner"></span></button>
+                    <button class="mfd-button" data-command-down="c 37 3026 1" data-command-up="c 37 3026 0"><span class="mfd-button-inner"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="misc misc--left">
+            <div class="misc-inner">
+                <fieldset>
+                    <legend>MASTER</legend>
+                    <div id="g49" data-gauge="49" class="switch switch--vertical switch--hdg">
+                        ARM
+                        <div class="switch-border">
+                            <div class="down">
+                                <div class="switch-inner">
+                                    <div class="clickareas">
+                                        <button class="left" data-command-down="c 23 3003 1" data-switch-direction-down="top"></button>
+                                        <button class="right" data-command-down="c 23 3003 0" data-switch-direction-down="down"></button>
+                                    </div>
+                                    <div class="rod"></div>
+                                </div>
+                            </div>
+                        </div>
+                        SAFE
+                    </div>
+                    <div class="master-mode-buttons">
+                        A/A - <button id="g47" data-gauge="47" class="master-mode-button master-mode-aa" data-command-down="c 23 3001 1" data-command-up="c 23 3001 0" data-active-class="active">A/A</button><br>
+                        A/G - <button id="g48" data-gauge="48" class="master-mode-button master-mode-ag" data-command-down="c 23 3002 1" data-command-up="c 23 3002 0" data-active-class="active">A/G</button>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>REFUEL</legend>
+
+                </fieldset>
+            </div>
+            <div class="misc-inner">
+                <fieldset>
+                    <legend>JETT</legend>
+                    
+                </fieldset>
+            </div>
+            <div class="misc-inner">
+                <fieldset>
+                    <legend>GEAR/FLAPS</legend>
+                    
+                </fieldset>
+            </div>
+        </div>
+        <div class="misc misc--right">
+            
+        </div>
+        <script>
+            const { ipcRenderer } = require('electron');
+            var clickables = document.querySelectorAll('[data-command-down],[data-command-up]');
+
+            var regularButtonDownCallback = function(e) {
+                if (e.cancelable) e.preventDefault()
+                var targetElement = e.currentTarget;
+                targetElement.classList.add('touch-active')
+                ipcRenderer.send('sendDcsCommand', targetElement.dataset.commandDown);
+
+                if (typeof targetElement.dataset.switchDirectionDown !== 'undefined' && targetElement.dataset.switchDirectionDown != '') {
+                    targetElement.parentElement.parentElement.parentElement.className = '';
+                    targetElement.parentElement.parentElement.parentElement.classList.add(targetElement.dataset.switchDirectionDown);
+                }
+                if (typeof targetElement.dataset.activeClass !== 'undefined' && targetElement.dataset.activeClass != '') {
+                    targetElement.classList.add('active');
+                }
+            }
+            var regularButtonUpCallback = function(e) {
+                if (e.cancelable) e.preventDefault()
+                var targetElement = e.currentTarget;
+                targetElement.classList.remove('touch-active')
+                ipcRenderer.send('sendDcsCommand', targetElement.dataset.commandUp);
+
+                if (typeof targetElement.dataset.switchDirectionUp !== 'undefined' && targetElement.dataset.switchDirectionUp != '') {
+                    targetElement.parentElement.parentElement.parentElement.className = '';
+                    targetElement.parentElement.parentElement.parentElement.classList.add(targetElement.dataset.switchDirectionUp);
+                }
+            }
+
+            clickables.forEach(function (button) {
+                button.addEventListener('mousedown', regularButtonDownCallback); 
+                button.addEventListener('touchstart', regularButtonDownCallback); 
+                button.addEventListener('mouseup', regularButtonUpCallback); 
+                button.addEventListener('touchend', regularButtonUpCallback); 
+            });
+
+            ipcRenderer.on('dcsDataReceived', function(e, data) {
+                data = data.split('response:');
+                var usedCommand = data[0];
+                var response = data[1];
+
+                // UFC display
+                if (usedCommand == 'l 6') {
+                    // update UFC
+                    response = response.split('\n');
+                    var ufcDisplays = {};
+                    ufcDisplays.option1 = response[13]+response[10];
+                    ufcDisplays.option1 = ufcDisplays.option1.padStart(5,' ');
+                    ufcDisplays.option2 = response[19]+response[16];
+                    ufcDisplays.option2 = ufcDisplays.option2.padStart(5,' ');
+                    ufcDisplays.option3 = response[25]+response[22];
+                    ufcDisplays.option3 = ufcDisplays.option3.padStart(5,' ');
+                    ufcDisplays.option4 = response[31]+response[28];
+                    ufcDisplays.option4 = ufcDisplays.option4.padStart(5,' ');
+                    ufcDisplays.option5 = response[37]+response[34];
+                    ufcDisplays.option5 = ufcDisplays.option5.padStart(5,' ');
+                    ufcDisplays.scratchPad = response[46].padStart(7,' ');
+                    ufcDisplays.scratchPad = response[40].padStart(1,' ') + response[43].padStart(1,' ') + ufcDisplays.scratchPad;
+                    ufcDisplays.scratchPad = ufcDisplays.scratchPad.replace('@','°')
+
+                    document.querySelector('.ufc-scratchpad .display-inner').innerHTML = ufcDisplays.scratchPad;
+                    document.querySelector('.ufc-option-display--1 .display-inner').innerHTML = ufcDisplays.option1;
+                    document.querySelector('.ufc-option-display--2 .display-inner').innerHTML = ufcDisplays.option2;
+                    document.querySelector('.ufc-option-display--3 .display-inner').innerHTML = ufcDisplays.option3;
+                    document.querySelector('.ufc-option-display--4 .display-inner').innerHTML = ufcDisplays.option4;
+                    document.querySelector('.ufc-option-display--5 .display-inner').innerHTML = ufcDisplays.option5;
+                }
+
+                // handle gauges in bulk
+                if (usedCommand == 'bulkGauges') {
+                    gauges = response.split(',');
+                    gauges = gauges.filter(n => n);
+                    gauges.forEach(function (gauge) {
+                        var parts = gauge.split(':');
+                        var gauge = parts[0];
+                        var value = parts[1];
+
+                        // master arm
+                        if (gauge == 49) {
+                            if (value == 1) {
+                                document.querySelector('#g49 .switch-border > div').className = 'top';
+                            } else {
+                                document.querySelector('#g49 .switch-border > div').className = 'down';
+                            }
+                        }
+                        if (gauge == 47) {
+                            if (value == 1) {
+                                document.querySelector('#g47').classList.add('active');
+                            } else {
+                                document.querySelector('#g47').classList.remove('active');
+                            }
+                        }
+                        if (gauge == 48) {
+                            if (value == 1) {
+                                document.querySelector('#g48').classList.add('active');
+                            } else {
+                                document.querySelector('#g48').classList.remove('active');
+                            }
+                        }
+                    });
+                }
+            });
+
+
+            // poll dcs data
+            window.setInterval(function () {
+                ipcRenderer.send('sendDcsCommand', 'l 6');
+            }, 200);
+            window.setInterval(function () {
+                ipcRenderer.send('sendDcsCommand', 'bg 49,47,48');
+            }, 1100);
+        </script>
+    </body>
+</html>

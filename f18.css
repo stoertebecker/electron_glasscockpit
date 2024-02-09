@@ -1,0 +1,361 @@
+
+@font-face {
+    font-family: 'dotrice';
+    src: url("dotrice.regular.otf") format("opentype");
+}
+@font-face {
+    font-family: 'dosis';
+    src: url("dosis.medium.ttf") format("truetype");
+}
+:root {
+    --mfd-dimension: 480px;
+    --mfd-button-dimention: 70px;
+    --mfd-button-inner-dimention: 50px;
+
+    --ufc-width: 620px;
+    --ufc-height: 430px;
+}
+html, body, button {
+    font-family: 'dosis';
+}
+html, body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+* {
+    cursor: none;
+}
+.touch-active {
+    opacity: 0.4;
+    transition: opacity 0s;
+}
+button {
+    opacity: 1.0;
+    transition: opacity 0.5s;
+}
+.mfd {
+    position: absolute;
+    width: var(--mfd-dimension);
+    height: var(--mfd-dimension);
+    border: var(--mfd-button-dimention) solid #222;
+    border-radius: 15px;
+    /*background: rgba(255, 255, 255, 0.1);*/
+}
+.mfd-inner {
+    border-radius: 75px;
+    border: 50px solid #222;
+    width: var(--mfd-dimension);
+    height: var(--mfd-dimension);
+    display: block;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+}
+.mfd--right {
+    right: 0px;
+    top: 30px;
+}
+.mfd--left {
+    left: 0px;
+    top: 30px;
+}
+.mfd--center {
+    left: calc(100vw / 2 - var(--mfd-dimension) / 2 - var(--mfd-button-dimention));
+    bottom: 0;
+}
+.mfd-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: var(--mfd-button-dimention);
+    height: var(--mfd-button-dimention);
+}
+.mfd-button-inner {
+    background: #575757;
+    border-radius: 7px;
+    border: 1px solid #575757;
+    color: #fff;
+    width: var(--mfd-button-inner-dimention);
+    height: var(--mfd-button-inner-dimention);
+    margin: 10px 13px;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+}
+.mfd-button-inner::after {
+    content: "I";
+    position: relative;
+    top: 6px;
+}
+.mfd-button-row--vertical {
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+}
+.mfd-button-row {
+    position: absolute;
+    text-align: center;
+    width: var(--mfd-dimension);
+}
+.mfd-button-row--left {
+    top: 0;
+    left: 0;
+}
+.mfd-button-row--top {
+    top: calc(var(--mfd-button-dimention) * -1);
+    left: 0;
+}
+.mfd-button-row--right {
+    top: 0;
+    left: calc(var(--mfd-button-dimention) + var(--mfd-dimension));
+}
+.mfd-button-row--bottom {
+    bottom: calc(var(--mfd-button-dimention) * -1);
+    left: 0;
+}
+
+.ufc {
+    width: var(--ufc-width);
+    height: var(--ufc-height);
+    background: #222;
+    border-radius: 15px;
+    position: absolute;
+    left: calc(100vw / 2 - var(--ufc-width) / 2);
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.ufc-numpad {
+    width: 230px;
+}
+.ufc-numpad-row {
+    display: flex;
+    justify-content: center;
+}
+.ufc-numpad-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.ufc-button {
+    display: block;
+    height: 60px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+.ufc-button-inner {
+    background: #575757;
+    border-radius: 7px;
+    display: table-cell;
+    font-size: 16px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+.ufc-scratchpad {
+    width: 230px;
+    height: 60px;
+    margin: 20px 0;
+    background: #000;
+}
+.ufc-options {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+.ufc-options .ufc-button {
+    height: 50px;
+}
+.ufc-options .ufc-button-inner {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.ufc-option-display {
+    height: 50px;
+    width: 200px;
+}
+.ufc-display {
+    background: #000;
+    color: #24ff00;
+    font-size: 31px;
+    font-family: 'dotrice';
+}
+.ufc-scratchpad .display-inner {
+    padding: 18px 6px;
+    display: block;
+    white-space: pre;
+}
+.ufc-option-display .display-inner {
+    padding: 12px 38px;
+    display: block;
+    white-space: pre;
+}
+.ufc-option-row {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 16px;
+}
+.ufc-option-row .ufc-button-inner {
+    padding: 10px;
+}
+.ufc-option-row .ufc-button-inner span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.ufc-bottom {
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+}
+.ufc-bottom .ufc-button-inner {
+    background: #373737;
+}
+
+.switch {
+    position: relative;
+}
+.switch .clickareas {
+    background: #f00;
+    opacity: 0;
+    width: 90px;
+    height: 60px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+    top: -15px;
+    display: flex;
+    justify-content: center;
+}
+.switch .clickareas button {
+    width: 100%;
+}
+.switch .switch-inner {
+    display: block;
+    width: 30px;
+    height: 30px;
+    overflow: visible;
+    border-radius: 100px;
+    background: #551111;
+    position: relative;
+    top: -4px;
+    left: 1px;
+}
+.switch .rod {
+    background: #8d8d8d;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    border-bottom: 14px solid #6d6d6d;
+    position: absolute;
+    bottom: 8px;
+    left: 7px;
+    transform-origin: 7px 22px;
+}
+.switch .left .rod {
+    transform: rotate(-90deg);
+}
+.switch .top .rod {
+    transform: rotate(0);
+}
+.switch .right .rod {
+    transform: rotate(90deg);
+}
+.switch .down .rod {
+    transform: rotate(180deg);
+}
+.switch--vertical .clickareas {
+    transform: rotate(90deg);
+    position: relative;
+    left: -45px;
+    top: -15px;
+}
+fieldset {
+    border: 2px solid #aaa;
+    border-radius: 100px;
+}
+fieldset legend {
+    color: #aaa;
+}
+.switch fieldset legend {
+    text-align: center;
+    white-space: pre;
+}
+.mfd--center .switch {
+    position: absolute;
+    z-index: 10;
+}
+.mfd--center .switch--crs {
+    top: -65px;
+    right: -60px;
+}
+.mfd--center .switch--hdg {
+    top: -65px;
+    left: -60px;
+}
+.misc {
+    border-radius: 15px;
+    background: #222;
+    position: absolute;
+    width: 610px;
+    height: 400px;
+    display: flex;
+    padding: 0 5px;
+    color: #aaa;
+}
+.misc--left {
+    bottom: 0;
+    left: 0;
+}
+.misc--right {
+    bottom: 0;
+    right: 0;
+}
+.misc .misc-inner {
+    width: 100%;
+    margin: 10px 2px;
+    display: flex;
+    flex-direction: column;
+}
+.misc fieldset {
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px 10px 10px;
+    margin: 0;
+    position: relative;
+}
+.misc .switch {
+    width: 54px;
+    text-align: center;
+}
+.misc .switch .switch-border {
+    border: 2px solid #aaa;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+.misc .switch--vertical .switch-inner {
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.master-mode-buttons {    
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    line-height: 50px;
+}
+.master-mode-button {
+    background: #111;
+    border: 2px solid #333;
+    border-radius: 3px;
+    color: #000;
+    padding: 10px 20px;
+}
+.master-mode-button.active {
+    color: #24ff00;
+}

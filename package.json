@@ -1,0 +1,14 @@
+{
+  "name": "electron_glasscockpit",
+  "version": "1.0.0",
+  "description": "a glass cockpit for DCS World",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "yes",
+  "devDependencies": {
+    "electron": "^28.2.1"
+  }
+}
