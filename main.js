@@ -62,7 +62,7 @@ const createWindow = () => {
   mainWindow.loadFile('index.html')
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools({mode:'undocked'})
+  //mainWindow.webContents.openDevTools({mode:'undocked'})
   renderProcess = mainWindow
   trySocketConnection()
 }

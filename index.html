@@ -137,8 +137,8 @@
                         <legend>CRS</legend>
                         <div class="switch-inner">
                             <div class="clickareas">
-                                <button class="left" data-command-down="c 35 3007 -1" data-command-up="c 35 3007 0" data-switch-direction-down="left" data-switch-direction-up="top"></button>
-                                <button class="right" data-command-down="c 35 3006 1" data-command-up="c 35 3006 0" data-switch-direction-down="right" data-switch-direction-up="top"></button>
+                                <button data-command-down="c 35 3007 -1" data-command-up="c 35 3007 0" data-switch-direction-down="left" data-switch-direction-up="top"></button>
+                                <button data-command-down="c 35 3006 1" data-command-up="c 35 3006 0" data-switch-direction-down="right" data-switch-direction-up="top"></button>
                             </div>
                             <div class="rod"></div>
                         </div>
@@ -149,8 +149,8 @@
                         <legend>HDG</legend>
                         <div class="switch-inner">
                             <div class="clickareas">
-                                <button class="left" data-command-down="c 35 3005 -1" data-command-up="c 35 3005 0" data-switch-direction-down="left" data-switch-direction-up="top"></button>
-                                <button class="right" data-command-down="c 35 3004 1" data-command-up="c 35 3004 0" data-switch-direction-down="right" data-switch-direction-up="top"></button>
+                                <button data-command-down="c 35 3005 -1" data-command-up="c 35 3005 0" data-switch-direction-down="left" data-switch-direction-up="top"></button>
+                                <button data-command-down="c 35 3004 1" data-command-up="c 35 3004 0" data-switch-direction-down="right" data-switch-direction-up="top"></button>
                             </div>
                             <div class="rod"></div>
                         </div>
@@ -196,8 +196,8 @@
                             <div class="down">
                                 <div class="switch-inner">
                                     <div class="clickareas">
-                                        <button class="left" data-command-down="c 23 3003 1" data-switch-direction-down="top"></button>
-                                        <button class="right" data-command-down="c 23 3003 0" data-switch-direction-down="down"></button>
+                                        <button data-command-down="c 23 3003 1" data-switch-direction-down="top"></button>
+                                        <button data-command-down="c 23 3003 0" data-switch-direction-down="down"></button>
                                     </div>
                                     <div class="rod"></div>
                                 </div>
@@ -211,34 +211,197 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>REFUEL</legend>
-
+                    <legend>FUEL</legend>
+                    <div id="g341" data-gauge="49" class="switch switch--vertical switch--hdg">
+                        EXTEND
+                        <span class="label-right-center">RETR</span>
+                        <div class="switch-border">
+                            <div class="right">
+                                <div class="switch-inner">
+                                    <div class="clickareas">
+                                        <button data-command-down="c 6 3002 1" data-switch-direction-down="top"></button>
+                                        <button data-command-down="c 6 3002 0" data-switch-direction-down="right"></button>
+                                        <button data-command-down="c 6 3002 -1" data-switch-direction-down="down"></button>
+                                    </div>
+                                    <div class="rod"></div>
+                                </div>
+                            </div>
+                        </div>
+                        EMERG EXTD
+                    </div>
+                    <div id="g344" data-gauge="49" class="switch switch--vertical switch--hdg">
+                        DUMP ON
+                        <div class="switch-border">
+                            <div class="down">
+                                <div class="switch-inner">
+                                    <div class="clickareas">
+                                        <button data-command-down="c 6 3003 1" data-switch-direction-down="top"></button>
+                                        <button data-command-down="c 6 3003 -1" data-switch-direction-down="down"></button>
+                                    </div>
+                                    <div class="rod"></div>
+                                </div>
+                            </div>
+                        </div>
+                        DUMP OFF
+                    </div>
                 </fieldset>
             </div>
             <div class="misc-inner">
                 <fieldset>
                     <legend>JETT</legend>
-                    
+                    <div>
+                        <siv class="jettison-button-wrapper">
+                            <span class="label label-top-left">L FUS<br>MSL</span>
+                            <span class="label label-top">SAFE</span>
+                            <span class="label label-top-right">R FUS<br>MSL</span>
+                            <span class="label label-right">RACK<br>LCHR</span>
+                            <span class="label label-bottom-right">STORES</span>
+                            <div id="jettison-knob"><i class="jettison-knob-arrow"></i></div>
+                            <button class="knob-spinner ccw" data-command-down="c 23 3015 0"></button>
+                            <button class="knob-spinner cw" data-command-down="c 23 3015 1"></button>
+                            <button class="jettison-button" data-command-down="c 23 3010 1" data-command-up="c 23 3010 0"></button>
+                        </siv>
+                        <div class="jettison-select-buttons-wrapper">
+                            <div class="button-row">
+                                <button id="g153" class="jettison-select-button" data-command-toggle="c 23 3005" data-value-off="0" data-value-on="1"><span>^</span></button>
+                            </div>
+                            <div class="button-row">
+                                <button id="g155" class="jettison-select-button" data-command-toggle="c 23 3006" data-value-off="0" data-value-on="1"><span>^</span></button>
+                                <button id="g159" class="jettison-select-button" data-command-toggle="c 23 3008" data-value-off="0" data-value-on="1"><span>^</span></button>
+                            </div>
+                            <div class="button-row">
+                                <button id="g157" class="jettison-select-button" data-command-toggle="c 23 3007" data-value-off="0" data-value-on="1"><span>^</span></button>
+                                <button id="g161" class="jettison-select-button" data-command-toggle="c 23 3009" data-value-off="0" data-value-on="1"><span>^</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
             </div>
             <div class="misc-inner">
                 <fieldset>
                     <legend>GEAR/FLAPS</legend>
-                    
+                    <div>
+                        <div class="gear-lever-wrapper">
+                            GEAR
+                            <div class="gear-slot">
+                                <button id="gear-lever-up" data-command-down="sc 430"></button>
+                                <button id="gear-lever-down" data-command-down="sc 431"></button>
+                            </div>
+                        </div>
+                        <div id="g234" data-gauge="49" class="switch switch--vertical switch--hdg">
+                            AUTO
+                            <span class="label-right-center">HALF</span>
+                            <div class="switch-border">
+                                <div class="right">
+                                    <div class="switch-inner">
+                                        <div class="clickareas">
+                                            <button data-command-down="c 2 3007 1" data-switch-direction-down="top"></button>
+                                            <button data-command-down="c 2 3007 0" data-switch-direction-down="right"></button>
+                                            <button data-command-down="c 2 3007 -1" data-switch-direction-down="down"></button>
+                                        </div>
+                                        <div class="rod"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            FULL
+                        </div>
+                    </div>
                 </fieldset>
             </div>
         </div>
         <div class="misc misc--right">
-            
+            <div class="misc-inner">
+                <fieldset>
+                    <legend>---</legend>
+
+                </fieldset>
+            </div>
+            <div class="misc-inner">
+                <fieldset>
+                    <legend>---</legend>
+
+                </fieldset>
+            </div>
+            <div class="misc-inner">
+                <fieldset>
+                    <legend>HOOK</legend>
+                    <div>
+                        <div class="gear-lever-wrapper hook-lever-wrapper">
+                            <div class="gear-slot">
+                                <button id="hook-lever-up" class="active" data-command-down="c 5 3009 1">H<br>O<br>O<br>K</button>
+                                <button id="hook-lever-down" data-command-down="c 5 3009 0">H<br>O<br>O<br>K</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>LASER</legend>
+                    <div>
+                        LTD/R
+                        <div id="g441" data-gauge="441" class="switch switch--vertical switch--hdg">
+                            ARM
+                            <div class="switch-border">
+                                <div class="down">
+                                    <div class="switch-inner">
+                                        <div class="clickareas">
+                                            <button data-command-down="c 62 3005 1" data-switch-direction-down="top"></button>
+                                            <button data-command-down="c 62 3005 0" data-switch-direction-down="down"></button>
+                                        </div>
+                                        <div class="rod"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            SAFE
+                        </div>
+                    </div>
+                    <div>
+                        LST/NFLR
+                        <div id="g442" data-gauge="442" class="switch switch--vertical switch--hdg">
+                            ARM
+                            <div class="switch-border">
+                                <div class="down">
+                                    <div class="switch-inner">
+                                        <div class="clickareas">
+                                            <button data-command-down="c 62 3003 1" data-switch-direction-down="top"></button>
+                                            <button data-command-down="c 62 3003 0" data-switch-direction-down="down"></button>
+                                        </div>
+                                        <div class="rod"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            SAFE
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
         </div>
         <script>
             const { ipcRenderer } = require('electron');
             var clickables = document.querySelectorAll('[data-command-down],[data-command-up]');
+            var togglebuttons = document.querySelectorAll('[data-command-toggle]');
 
-            var regularButtonDownCallback = function(e) {
-                if (e.cancelable) e.preventDefault()
+            var toggleButtonDownCallback = function(e) {
+                if (e.cancelable) e.preventDefault();
                 var targetElement = e.currentTarget;
-                targetElement.classList.add('touch-active')
+                targetElement.classList.add('touch-active');
+                if (targetElement.classList.contains('active')) {
+                    console.log(targetElement.dataset.commandDown+' '+targetElement.dataset.valueOff);
+                    ipcRenderer.send('sendDcsCommand', targetElement.dataset.commandToggle+' '+targetElement.dataset.valueOff);
+                    targetElement.classList.remove('active');
+                } else {
+                    ipcRenderer.send('sendDcsCommand', targetElement.dataset.commandToggle+' '+targetElement.dataset.valueOn);
+                    targetElement.classList.add('active');
+                }
+            }
+            var toggleButtonUpCallback = function(e) {
+                if (e.cancelable) e.preventDefault();
+                var targetElement = e.currentTarget;
+                targetElement.classList.remove('touch-active');
+            }
+            var regularButtonDownCallback = function(e) {
+                if (e.cancelable) e.preventDefault();
+                var targetElement = e.currentTarget;
+                targetElement.classList.add('touch-active');
                 ipcRenderer.send('sendDcsCommand', targetElement.dataset.commandDown);
 
                 if (typeof targetElement.dataset.switchDirectionDown !== 'undefined' && targetElement.dataset.switchDirectionDown != '') {
@@ -250,9 +413,9 @@
                 }
             }
             var regularButtonUpCallback = function(e) {
-                if (e.cancelable) e.preventDefault()
+                if (e.cancelable) e.preventDefault();
                 var targetElement = e.currentTarget;
-                targetElement.classList.remove('touch-active')
+                targetElement.classList.remove('touch-active');
                 ipcRenderer.send('sendDcsCommand', targetElement.dataset.commandUp);
 
                 if (typeof targetElement.dataset.switchDirectionUp !== 'undefined' && targetElement.dataset.switchDirectionUp != '') {
@@ -267,6 +430,17 @@
                 button.addEventListener('mouseup', regularButtonUpCallback); 
                 button.addEventListener('touchend', regularButtonUpCallback); 
             });
+            togglebuttons.forEach(function (button) {
+                button.addEventListener('mousedown', toggleButtonDownCallback); 
+                button.addEventListener('touchstart', toggleButtonDownCallback); 
+                button.addEventListener('mouseup', toggleButtonUpCallback); 
+                button.addEventListener('touchend', toggleButtonUpCallback); 
+            });
+
+
+
+
+
 
             ipcRenderer.on('dcsDataReceived', function(e, data) {
                 data = data.split('response:');
@@ -290,7 +464,9 @@
                     ufcDisplays.option5 = ufcDisplays.option5.padStart(5,' ');
                     ufcDisplays.scratchPad = response[46].padStart(7,' ');
                     ufcDisplays.scratchPad = response[40].padStart(1,' ') + response[43].padStart(1,' ') + ufcDisplays.scratchPad;
-                    ufcDisplays.scratchPad = ufcDisplays.scratchPad.replace('@','°')
+                    ufcDisplays.scratchPad = ufcDisplays.scratchPad.replaceAll('@','°')
+                    ufcDisplays.scratchPad = ufcDisplays.scratchPad.replaceAll('p','E')
+                    ufcDisplays.scratchPad = ufcDisplays.scratchPad.replaceAll('w','R')
 
                     document.querySelector('.ufc-scratchpad .display-inner').innerHTML = ufcDisplays.scratchPad;
                     document.querySelector('.ufc-option-display--1 .display-inner').innerHTML = ufcDisplays.option1;
@@ -298,6 +474,8 @@
                     document.querySelector('.ufc-option-display--3 .display-inner').innerHTML = ufcDisplays.option3;
                     document.querySelector('.ufc-option-display--4 .display-inner').innerHTML = ufcDisplays.option4;
                     document.querySelector('.ufc-option-display--5 .display-inner').innerHTML = ufcDisplays.option5;
+                } else if (usedCommand !=='bulkGauges') {
+                    console.log(data);
                 }
 
                 // handle gauges in bulk
@@ -317,6 +495,7 @@
                                 document.querySelector('#g49 .switch-border > div').className = 'down';
                             }
                         }
+                        // master mode AA
                         if (gauge == 47) {
                             if (value == 1) {
                                 document.querySelector('#g47').classList.add('active');
@@ -324,11 +503,100 @@
                                 document.querySelector('#g47').classList.remove('active');
                             }
                         }
+                        // master mode AG
                         if (gauge == 48) {
                             if (value == 1) {
                                 document.querySelector('#g48').classList.add('active');
                             } else {
                                 document.querySelector('#g48').classList.remove('active');
+                            }
+                        }
+                        // fuel probe
+                        if (gauge == 341) {
+                            if (value == 1) {
+                                document.querySelector('#g341 .switch-border > div').className = 'top';
+                            } else if (value == 0) {
+                                document.querySelector('#g341 .switch-border > div').className = 'right';
+                            } else {
+                                document.querySelector('#g341 .switch-border > div').className = 'down';
+                            }
+                        }
+                        // fuel dump
+                        if (gauge == 344) {
+                            if (value == 1) {
+                                document.querySelector('#g344 .switch-border > div').className = 'top';
+                            } else {
+                                document.querySelector('#g344 .switch-border > div').className = 'down';
+                            }
+                        }
+                        // flaps
+                        if (gauge == 234) {
+                            if (value == 1) {
+                                document.querySelector('#g234 .switch-border > div').className = 'top';
+                            } else if (value == 0) {
+                                document.querySelector('#g234 .switch-border > div').className = 'right';
+                            } else {
+                                document.querySelector('#g234 .switch-border > div').className = 'down';
+                            }
+                        }
+                        // gear lever
+                        if (gauge == 226) {
+                            if (value == 1) {
+                                document.querySelector('#gear-lever-up').classList.add('active');
+                                document.querySelector('#gear-lever-down').classList.remove('active');
+                            } else {
+                                document.querySelector('#gear-lever-down').classList.add('active');
+                                document.querySelector('#gear-lever-up').classList.remove('active');
+                            }
+                        }
+                        // hook lever
+                        if (gauge == 293) {
+                            if (value == 1) {
+                                document.querySelector('#hook-lever-up').classList.add('active');
+                                document.querySelector('#hook-lever-down').classList.remove('active');
+                            } else {
+                                document.querySelector('#hook-lever-down').classList.add('active');
+                                document.querySelector('#hook-lever-up').classList.remove('active');
+                            }
+                        }
+                        // jettison knob
+                        if (gauge == 236) {
+                            value = Math.floor(value*100)/100;
+                            if (value < 0) {
+                                document.querySelector('#jettison-knob').style.transform = 'rotate(-45deg)';
+                            } else if (value == 0.1) {
+                                document.querySelector('#jettison-knob').style.transform = 'rotate(45deg)';
+                            } else if (value == 0.2) {
+                                document.querySelector('#jettison-knob').style.transform = 'rotate(90deg)';
+                            } else if (value == 0.3) {
+                                document.querySelector('#jettison-knob').style.transform = 'rotate(135deg)';
+                            } else {
+                                document.querySelector('#jettison-knob').style.transform = 'rotate(0deg)';
+                            }
+                        }
+                        // jettison select buttons
+                        if ([153,155,157,159,161].includes(parseInt(gauge))) {
+                            var elementId = 'g'+gauge;
+                            if (value == 1) {
+                                document.querySelector('#'+elementId).classList.add('active');
+                            } else {
+                                document.querySelector('#'+elementId).classList.remove('active');
+                            }
+                        }
+                        // laser arm
+                        if (gauge == 441) {
+                            if (value == 1) {
+                                document.querySelector('#g441 .switch-border > div').className = 'top';
+                            } else {
+                                document.querySelector('#g441 .switch-border > div').className = 'down';
+                            }
+                        }
+                        // laser spot
+                        if (gauge == 442) {
+                            if (value == 1) {
+                                document.querySelector('#g442 .switch-border > div').className = 'top';
+                            } else {
+                                document.querySelector('#g442 .switch-border > div').className = 'down';
                             }
                         }
                     });
@@ -341,8 +609,8 @@
                 ipcRenderer.send('sendDcsCommand', 'l 6');
             }, 200);
             window.setInterval(function () {
-                ipcRenderer.send('sendDcsCommand', 'bg 49,47,48');
-            }, 1100);
+                ipcRenderer.send('sendDcsCommand', 'bg 49,47,48,341,344,234,226,236,153,155,157,159,161,293,441,442');
+            }, 1157);
         </script>
     </body>
 </html>

@@ -256,6 +256,11 @@ button {
     left: 7px;
     transform-origin: 7px 22px;
 }
+.switch .label-right-center {
+    position: absolute;
+    left: 55px;
+    top: 38px;
+}
 .switch .left .rod {
     transform: rotate(-90deg);
 }
@@ -327,6 +332,8 @@ fieldset legend {
     padding: 20px 10px 10px;
     margin: 0;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 .misc .switch {
     width: 54px;
@@ -352,10 +359,151 @@ fieldset legend {
 .master-mode-button {
     background: #111;
     border: 2px solid #333;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #000;
     padding: 10px 20px;
 }
 .master-mode-button.active {
+    color: #24ff00;
+}
+.misc--left #g341 {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+.misc--left #g344 {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+.gear-lever-wrapper {
+    margin-left: 120px;
+}
+.gear-slot {
+    width: 10px;
+    height: 150px;
+    background: #000;
+    border: 5px solid #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 10px;
+}
+.gear-lever-wrapper button {
+    width: 50px;
+    height: 60px;
+    background: none;
+    border: none;
+    position: relative;
+    left: -20px;
+}
+.gear-lever-wrapper button.active {
+    background: linear-gradient(#440000, #800000, #440000);
+}
+.gear-lever-wrapper.hook-lever-wrapper button {
+    background: none;
+    color: #000;
+    height: auto;
+    border: none;
+}
+.gear-lever-wrapper.hook-lever-wrapper button.active {
+    background: #666;
+    color: #fff;
+    border: 2px solid #777;
+}
+.jettison-button-wrapper {
+    width: 175px;
+    display: block;
+}
+#jettison-knob {
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    background: #777;
+    border: 10px solid #555;
+    position: relative;
+    margin: 30px auto;
+}
+.jettison-knob-arrow {
+    border: solid #555;
+    border-width: 0 13px 13px 0;
+    display: inline-block;
+    transform: rotate(-135deg) translate(50%, -50%);
+    position: absolute;
+    top: -16px;
+    left: 52%;
+}
+.jettison-button-wrapper .label {
+    position: absolute;
+    font-size: 12px;
+}
+.jettison-button-wrapper .label-top-left {
+    top: 39px;
+    left: 27px;
+}
+.jettison-button-wrapper .label-top {
+    top: 21px;
+    left: 82px;
+}
+.jettison-button-wrapper .label-top-right {
+    top: 39px;
+    left: 147px;
+}
+.jettison-button-wrapper .label-right {
+    top: 86px;
+    left: 158px;
+}
+.jettison-button-wrapper .label-bottom-right {
+    top: 142px;
+    left: 141px;
+}
+.jettison-button-wrapper button.knob-spinner {
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    border: none;
+    background: none;
+}
+.jettison-button-wrapper button.ccw {
+    top: 50px;
+    left: 10px;
+}
+.jettison-button-wrapper button.cw {
+    top: 50px;
+    right: 10px;
+}
+.jettison-button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border: none;
+    background: #662222;
+    top: 65px;
+    left: 63px;
+}
+.jettison-select-buttons-wrapper {
+    display: block;
+    width: 100%;
+}
+.jettison-select-buttons-wrapper .button-row {
+    display: flex;
+    justify-content: center;
+}
+.jettison-select-buttons-wrapper .jettison-select-button {
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: #111;
+    color: 000;
+    padding: 10px 20px;
+    font-size: 50px;
+    line-height: 20px;
+}
+.jettison-select-buttons-wrapper .jettison-select-button span {
+    position: relative;
+    top: 10px;
+}
+.jettison-select-buttons-wrapper .jettison-select-button.active {
     color: #24ff00;
 }
